@@ -2421,9 +2421,9 @@ function WBFooter() {
               maxWidth: 240,
             }}
           >
-            Machine learning · Research
+            AI Research Assistant · Research
             <br />
-            Tyxo SA · Lausanne, CH
+            Tyxo · Zurich, CH
           </div>
           <div
             style={{ marginTop: 18, display: "flex", gap: 6, flexWrap: "wrap" }}
@@ -2502,7 +2502,7 @@ function WBFooter() {
           letterSpacing: "1px",
         }}
       >
-        <span>© 2026 Tyxo SA · v1.0</span>
+        <span>© 2026 Tyxo · v1.0</span>
         <span>EU-hosted · GDPR · AI Act ready</span>
       </div>
     </footer>

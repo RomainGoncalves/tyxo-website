@@ -79,10 +79,6 @@ function MemoNav() {
         </div>
       </div>
       <div style={memoStyles.navRight}>
-        <a style={memoStyles.signin} href="#">
-          Sign in
-        </a>
-        <button style={memoStyles.ctaBtn}>Request access →</button>
       </div>
     </nav>
   );
@@ -123,7 +119,7 @@ function MemoHero() {
                 display: "inline-block",
               }}
             />
-            <Kicker>Machine learning · for research</Kicker>
+            <Kicker>AI Research Assistant · for research</Kicker>
           </div>
           <h1
             style={{
@@ -161,22 +157,13 @@ function MemoHero() {
               maxWidth: 600,
             }}
           >
-            Tyxo is a no-code machine learning platform for the half-million
+            Tyxo is a no-code AI Research Assistant platform for the half-million
             European researchers who collect labelled data every week and do not
             have a data scientist. Upload, train, classify — automated
             end-to-end, EU-hosted from day one, with an audit trail built for
             the AI Act.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
-            <button
-              style={{
-                ...memoStyles.ctaBtn,
-                padding: "14px 24px",
-                fontSize: 14,
-              }}
-            >
-              Request early access →
-            </button>
             <button
               style={{
                 ...memoStyles.ctaSecondary,
@@ -1497,15 +1484,7 @@ function MemoPricing() {
             Team and Enterprise tiers add seats, SSO, on-prem and shared DPA.
             Compute is included; there is no usage meter.
           </p>
-          <button
-            style={{
-              ...memoStyles.ctaSecondary,
-              padding: "12px 22px",
-              fontSize: 14,
-            }}
-          >
-            Compare plans →
-          </button>
+
         </div>
         <div
           style={{
@@ -1672,11 +1651,6 @@ function MemoCTA() {
       </p>
       <div style={{ display: "flex", gap: 14, justifyContent: "center" }}>
         <button
-          style={{ ...memoStyles.ctaBtn, padding: "15px 28px", fontSize: 14 }}
-        >
-          Request early access →
-        </button>
-        <button
           style={{
             ...memoStyles.ctaSecondary,
             padding: "14px 26px",
@@ -1719,9 +1693,9 @@ function MemoFooter() {
               fontWeight: 300,
             }}
           >
-            Machine learning · Research
+            AI Research Assistant · Research
             <br />
-            Tyxo SA · Lausanne, CH
+            Tyxo · Zurich, CH
           </div>
         </div>
         {[
@@ -1794,7 +1768,7 @@ function MemoFooter() {
           letterSpacing: "1px",
         }}
       >
-        <span>© 2026 Tyxo SA · v1.0</span>
+        <span>© 2026 Tyxo · v1.0</span>
         <span>EU-hosted · GDPR · AI Act ready</span>
       </div>
     </footer>

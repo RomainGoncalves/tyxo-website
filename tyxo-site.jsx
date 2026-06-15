@@ -61,7 +61,7 @@ function SiteHero() {
                 display: "inline-block",
               }}
             />
-            <Kicker>Machine learning · for research</Kicker>
+            <Kicker>AI Research Assistant · for research</Kicker>
           </div>
           <h1
             style={{
@@ -100,22 +100,13 @@ function SiteHero() {
               opacity: 0.78,
             }}
           >
-            Tyxo is a no-code machine learning platform for the half-million
+            Tyxo is a no-code AI Research Assistant platform for the half-million
             European researchers who collect labelled data every week and do not
             have a data scientist. Upload, train, classify — automated
             end-to-end, EU-hosted from day one, with an audit trail built for
             the AI Act.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
-            <button
-              style={{
-                ...memoStyles.ctaBtn,
-                padding: "14px 24px",
-                fontSize: 14,
-              }}
-            >
-              Request early access →
-            </button>
             <button
               style={{
                 ...memoStyles.ctaSecondary,

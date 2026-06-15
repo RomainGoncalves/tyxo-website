@@ -68,8 +68,6 @@ function MFNav() {
         </div>
       </div>
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-        <button style={mfStyles.ctaGhost}>Sign in</button>
-        <button style={mfStyles.ctaPrimary}>Request access →</button>
       </div>
     </nav>
   );
@@ -115,7 +113,7 @@ function MFHero() {
           textWrap: "balance",
         }}
       >
-        Machine learning,
+        AI Research Assistant,
         <br />
         finally{" "}
         <em style={{ color: "#C0634A", fontWeight: 700, fontStyle: "italic" }}>
@@ -166,15 +164,6 @@ function MFHero() {
           }}
         >
           <div style={{ display: "flex", gap: 12 }}>
-            <button
-              style={{
-                ...mfStyles.ctaPrimary,
-                padding: "16px 28px",
-                fontSize: 14,
-              }}
-            >
-              Request early access →
-            </button>
             <button
               style={{
                 background: "#FFFFFF",
@@ -1367,7 +1356,7 @@ function MFFooter() {
               maxWidth: 260,
             }}
           >
-            "Machine learning, finally built for the scientist."
+            "AI Research Assistant, finally built for the scientist."
           </div>
           <div
             style={{
@@ -1378,7 +1367,7 @@ function MFFooter() {
               letterSpacing: ".6px",
             }}
           >
-            Tyxo SA · Lausanne, CH · Anno 2026
+            Tyxo · Zurich, CH · Anno 2026
           </div>
         </div>
         {[
@@ -1443,7 +1432,7 @@ function MFFooter() {
           letterSpacing: "1px",
         }}
       >
-        <span>© 2026 Tyxo SA · v1.0</span>
+        <span>© 2026 Tyxo · v1.0</span>
         <span>EU-hosted · GDPR · AI Act ready</span>
       </div>
     </footer>
