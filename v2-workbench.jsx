@@ -76,12 +76,11 @@ function WBNav() {
       <div style={{ display: "flex", alignItems: "center", gap: 44 }}>
         <TyxoLogo dark size={20} />
         <div style={{ display: "flex", gap: 28 }}>
-          <span style={wbStyles.navLinkActive}>Platform</span>
-          <span style={wbStyles.navLink}>Workflow</span>
-          <span style={wbStyles.navLink}>AltiCore</span>
-          <span style={wbStyles.navLink}>Compliance</span>
-          <span style={wbStyles.navLink}>Pricing</span>
-          <span style={wbStyles.navLink}>Docs</span>
+          <a href="#platform" style={{ ...wbStyles.navLinkActive, textDecoration: "none" }}>Platform</a>
+          <a href="#workflow" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Workflow</a>
+          <a href="#alticore" style={{ ...wbStyles.navLink, textDecoration: "none" }}>AltiCore</a>
+          <a href="#compliance" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Compliance</a>
+          <a href="#pricing" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Pricing</a>
         </div>
       </div>
       <div style={{ display: "flex", gap: 14, alignItems: "center" }}>
@@ -689,6 +688,7 @@ function WBProductWindow() {
 function WBHero() {
   return (
     <section
+      id="platform"
       style={{
         background: "#0D2E2E",
         color: "#F0EBE3",
@@ -1260,6 +1260,7 @@ function WBWorkflow() {
 
   return (
     <section
+      id="workflow"
       style={{ padding: "112px 56px 96px", borderBottom: "1px solid #E0E0E0" }}
     >
       <div
@@ -1410,6 +1411,7 @@ function WBWorkflow() {
 function WBAltiCore() {
   return (
     <section
+      id="alticore"
       style={{
         padding: "112px 56px 96px",
         background: "#0D2E2E",
@@ -1917,6 +1919,7 @@ function WBCompliance() {
   ];
   return (
     <section
+      id="compliance"
       style={{
         padding: "112px 56px 96px",
         background: "#F7F4F0",
@@ -2108,6 +2111,7 @@ function WBPricing() {
   ];
   return (
     <section
+      id="pricing"
       style={{ padding: "112px 56px 96px", borderBottom: "1px solid #E0E0E0" }}
     >
       <div
@@ -2449,46 +2453,48 @@ function WBFooter() {
             )}
           </div>
         </div>
-        {[
-          [
-            "Product",
-            ["Platform", "Workflow", "AltiCore", "Compliance", "Pricing"],
-          ],
-          [
-            "Resources",
+        <div style={{ display: "none" }}>
+          {[
             [
-              "Docs",
-              "Methodology",
-              "Case studies",
-              "Model card spec",
-              "Changelog",
+              "Product",
+              ["Platform", "Workflow", "AltiCore", "Compliance", "Pricing"],
             ],
-          ],
-          ["Company", ["About", "Careers", "Press", "Security", "Partners"]],
-          ["Legal", ["Privacy", "DPA", "Terms", "GDPR", "Imprint"]],
-        ].map((col, i) => (
-          <div key={i}>
-            <Kicker color="#E8845C" size={9}>
-              {col[0]}
-            </Kicker>
-            <div style={{ marginTop: 12 }}>
-              {col[1].map((l, j) => (
-                <div
-                  key={j}
-                  style={{
-                    fontFamily: "'Outfit',sans-serif",
-                    fontSize: 13,
-                    color: "#B8C8B8",
-                    marginBottom: 8,
-                    fontWeight: 300,
-                  }}
-                >
-                  {l}
-                </div>
-              ))}
+            [
+              "Resources",
+              [
+                "Docs",
+                "Methodology",
+                "Case studies",
+                "Model card spec",
+                "Changelog",
+              ],
+            ],
+            ["Company", ["About", "Careers", "Press", "Security", "Partners"]],
+            ["Legal", ["Privacy", "DPA", "Terms", "GDPR", "Imprint"]],
+          ].map((col, i) => (
+            <div key={i}>
+              <Kicker color="#E8845C" size={9}>
+                {col[0]}
+              </Kicker>
+              <div style={{ marginTop: 12 }}>
+                {col[1].map((l, j) => (
+                  <div
+                    key={j}
+                    style={{
+                      fontFamily: "'Outfit',sans-serif",
+                      fontSize: 13,
+                      color: "#B8C8B8",
+                      marginBottom: 8,
+                      fontWeight: 300,
+                    }}
+                  >
+                    {l}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div
         style={{

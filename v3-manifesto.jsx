@@ -60,9 +60,9 @@ function MFNav() {
             fontWeight: 400,
           }}
         >
-          <span>What it does</span>
-          <span>Who it's for</span>
-          <span>Manifesto</span>
+          <a href="#what-it-does" style={{ textDecoration: "none", color: "inherit" }}>What it does</a>
+          <a href="#who-its-for" style={{ textDecoration: "none", color: "inherit" }}>Who it's for</a>
+          <a href="#manifesto" style={{ textDecoration: "none", color: "inherit" }}>Manifesto</a>
           <span>Compliance</span>
           <span>Pricing</span>
         </div>
@@ -285,7 +285,7 @@ function MFManifesto() {
     },
   ];
   return (
-    <section style={{ padding: "120px 56px 96px", background: "#F0EBE3" }}>
+    <section id="manifesto" style={{ padding: "120px 56px 96px", background: "#F0EBE3" }}>
       <div
         style={{
           display: "grid",
@@ -402,6 +402,7 @@ function MFManifesto() {
 function MFWorkflow() {
   return (
     <section
+      id="what-it-does"
       style={{
         padding: "120px 56px 0",
         background: "#C0634A",
@@ -923,7 +924,7 @@ function MFAudience() {
     },
   ];
   return (
-    <section style={{ padding: "120px 56px 96px", background: "#F0EBE3" }}>
+    <section id="who-its-for" style={{ padding: "120px 56px 96px", background: "#F0EBE3" }}>
       <div
         style={{
           display: "flex",
@@ -1370,55 +1371,57 @@ function MFFooter() {
             Tyxo · Zurich, CH · Anno 2026
           </div>
         </div>
-        {[
-          [
-            "Product",
+        <div style={{ display: "none" }}>
+          {[
             [
-              "How it works",
-              "For researchers",
-              "Manifesto",
-              "AltiCore engine",
-              "Compliance",
+              "Product",
+              [
+                "How it works",
+                "For researchers",
+                "Manifesto",
+                "AltiCore engine",
+                "Compliance",
+              ],
             ],
-          ],
-          [
-            "Resources",
             [
-              "Methodology",
-              "Case studies",
-              "Model card spec",
-              "AI Act guide",
-              "Changelog",
+              "Resources",
+              [
+                "Methodology",
+                "Case studies",
+                "Model card spec",
+                "AI Act guide",
+                "Changelog",
+              ],
             ],
-          ],
-          [
-            "Company",
-            ["About", "Press", "Careers", "Partnerships", "Security"],
-          ],
-          ["Legal", ["Privacy", "DPA", "Terms", "GDPR", "Imprint"]],
-        ].map((col, i) => (
-          <div key={i}>
-            <Kicker color="#E8845C" size={9}>
-              {col[0]}
-            </Kicker>
-            <div style={{ marginTop: 12 }}>
-              {col[1].map((l, j) => (
-                <div
-                  key={j}
-                  style={{
-                    fontFamily: "'Outfit',sans-serif",
-                    fontSize: 13,
-                    color: "#B8C8B8",
-                    marginBottom: 8,
-                    fontWeight: 300,
-                  }}
-                >
-                  {l}
-                </div>
-              ))}
+            [
+              "Company",
+              ["About", "Press", "Careers", "Partnerships", "Security"],
+            ],
+            ["Legal", ["Privacy", "DPA", "Terms", "GDPR", "Imprint"]],
+          ].map((col, i) => (
+            <div key={i}>
+              <Kicker color="#E8845C" size={9}>
+                {col[0]}
+              </Kicker>
+              <div style={{ marginTop: 12 }}>
+                {col[1].map((l, j) => (
+                  <div
+                    key={j}
+                    style={{
+                      fontFamily: "'Outfit',sans-serif",
+                      fontSize: 13,
+                      color: "#B8C8B8",
+                      marginBottom: 8,
+                      fontWeight: 300,
+                    }}
+                  >
+                    {l}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div
         style={{

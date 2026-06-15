@@ -71,11 +71,11 @@ function MemoNav() {
       <div style={{ display: "flex", alignItems: "center", gap: 48 }}>
         <TyxoLogo size={22} />
         <div style={memoStyles.navLinks}>
-          <span>Product</span>
-          <span>For researchers</span>
-          <span>Compliance</span>
-          <span>Pricing</span>
-          <span>Docs</span>
+          <a href="#product" style={{ textDecoration: "none", color: "inherit" }}>Product</a>
+          <a href="#for-researchers" style={{ textDecoration: "none", color: "inherit" }}>For researchers</a>
+          <a href="#compliance" style={{ textDecoration: "none", color: "inherit" }}>Compliance</a>
+          <a href="#pricing" style={{ textDecoration: "none", color: "inherit" }}>Pricing</a>
+
         </div>
       </div>
       <div style={memoStyles.navRight}>
@@ -87,6 +87,7 @@ function MemoNav() {
 function MemoHero() {
   return (
     <section
+      id="product"
       style={{
         padding: "88px 64px 80px",
         borderBottom: "1px solid #E0E0E0",
@@ -1121,6 +1122,7 @@ function MemoUsers() {
   ];
   return (
     <section
+      id="for-researchers"
       style={{ padding: "104px 64px 96px", borderBottom: "1px solid #E0E0E0" }}
     >
       <div
@@ -1259,6 +1261,7 @@ function MemoCompliance() {
   ];
   return (
     <section
+      id="compliance"
       style={{
         padding: "112px 64px",
         borderBottom: "1px solid #E0E0E0",
@@ -1417,6 +1420,7 @@ function MemoCompliance() {
 function MemoPricing() {
   return (
     <section
+      id="pricing"
       style={{
         padding: "96px 64px 80px",
         borderBottom: "1px solid #E0E0E0",
@@ -1698,63 +1702,65 @@ function MemoFooter() {
             Tyxo · Zurich, CH
           </div>
         </div>
-        {[
-          [
-            "Product",
+        <div style={{ display: "none" }}>
+          {[
             [
-              "How it works",
-              "For researchers",
-              "For institutional labs",
-              "AltiCore engine",
-              "Compliance",
+              "Product",
+              [
+                "How it works",
+                "For researchers",
+                "For institutional labs",
+                "AltiCore engine",
+                "Compliance",
+              ],
             ],
-          ],
-          [
-            "Resources",
             [
-              "Methodology paper",
-              "Case studies",
-              "Model card spec",
-              "EU AI Act guide",
-              "Changelog",
+              "Resources",
+              [
+                "Methodology paper",
+                "Case studies",
+                "Model card spec",
+                "EU AI Act guide",
+                "Changelog",
+              ],
             ],
-          ],
-          [
-            "Company",
-            ["About", "Press", "Careers", "Partnerships", "Security"],
-          ],
-          ["Legal", ["Privacy", "DPA", "Terms", "GDPR", "Imprint"]],
-        ].map((col, i) => (
-          <div key={i}>
-            <div
-              style={{
-                fontFamily: "'Source Code Pro',monospace",
-                fontSize: 9,
-                fontWeight: 600,
-                letterSpacing: "1.4px",
-                textTransform: "uppercase",
-                color: "#E8845C",
-                marginBottom: 14,
-              }}
-            >
-              {col[0]}
-            </div>
-            {col[1].map((l, j) => (
+            [
+              "Company",
+              ["About", "Press", "Careers", "Partnerships", "Security"],
+            ],
+            ["Legal", ["Privacy", "DPA", "Terms", "GDPR", "Imprint"]],
+          ].map((col, i) => (
+            <div key={i}>
               <div
-                key={j}
                 style={{
-                  fontFamily: "'Outfit',sans-serif",
-                  fontSize: 13,
-                  color: "#B8C8B8",
-                  marginBottom: 8,
-                  fontWeight: 300,
+                  fontFamily: "'Source Code Pro',monospace",
+                  fontSize: 9,
+                  fontWeight: 600,
+                  letterSpacing: "1.4px",
+                  textTransform: "uppercase",
+                  color: "#E8845C",
+                  marginBottom: 14,
                 }}
               >
-                {l}
+                {col[0]}
               </div>
-            ))}
-          </div>
-        ))}
+              {col[1].map((l, j) => (
+                <div
+                  key={j}
+                  style={{
+                    fontFamily: "'Outfit',sans-serif",
+                    fontSize: 13,
+                    color: "#B8C8B8",
+                    marginBottom: 8,
+                    fontWeight: 300,
+                  }}
+                >
+                  {l}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
       <div
         style={{
