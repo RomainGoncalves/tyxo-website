@@ -22,11 +22,14 @@ import {
 } from "./v1-memo.jsx";
 import { WBUseCases } from "./v2-workbench.jsx";
 import { MFManifesto, MFWorkflow } from "./v3-manifesto.jsx";
-import { Kicker } from "./shared.jsx";
+import { useState } from "react";
+import { Kicker, LegalModal } from "./shared.jsx";
 
 // Modified hero — V1 layout, V3 linen ground.
 function SiteHero() {
+  const [modal, setModal] = useState(null);
   return (
+    <>
     <section
       style={{
         padding: "88px 64px 80px",
@@ -107,18 +110,16 @@ function SiteHero() {
             the AI Act.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
-            <a
-              href="#contact"
+            <button
+              onClick={() => setModal("contact")}
               style={{
                 ...memoStyles.ctaSecondary,
                 padding: "13px 22px",
                 fontSize: 14,
-                textDecoration: "none",
-                display: "inline-block",
               }}
             >
               Get in touch
-            </a>
+            </button>
           </div>
           <div
             style={{
@@ -391,6 +392,8 @@ function SiteHero() {
         </div>
       </div>
     </section>
+    <LegalModal type={modal} onClose={() => setModal(null)} />
+    </>
   );
 }
 

@@ -1,4 +1,5 @@
-import { TyxoLogo, Kicker, WaitlistForm } from "./shared.jsx";
+import { useState } from "react";
+import { TyxoLogo, Kicker, WaitlistForm, LegalModal } from "./shared.jsx";
 
 // V3 — "The Manifesto"
 // Bold, confident, asymmetric editorial. Big display Fraunces italics, alternating
@@ -1307,7 +1308,9 @@ function MFClosing() {
 }
 
 function MFFooter() {
+  const [modal, setModal] = useState(null);
   return (
+    <>
     <footer
       style={{
         padding: "48px 56px 40px",
@@ -1415,9 +1418,16 @@ function MFFooter() {
         }}
       >
         <span>© 2026 Tyxo · v1.0</span>
-        <span>EU-hosted · GDPR · AI Act ready</span>
+        <span>
+          EU-hosted · GDPR · AI Act ready ·{" "}
+          <button onClick={() => setModal("privacy")} style={{ background: "none", border: "none", color: "#6A8A8A", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", padding: 0 }}>Privacy</button>
+          {" · "}
+          <button onClick={() => setModal("terms")} style={{ background: "none", border: "none", color: "#6A8A8A", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", padding: 0 }}>Terms</button>
+        </span>
       </div>
     </footer>
+    <LegalModal type={modal} onClose={() => setModal(null)} />
+    </>
   );
 }
 

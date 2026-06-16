@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp server/submit.php public/submit.php",
+    "build": "vite build && cp server/submit.php public/submit.php && cp server/.htaccess public/.htaccess",
     "preview": "vite preview"
   },
   "dependencies": {

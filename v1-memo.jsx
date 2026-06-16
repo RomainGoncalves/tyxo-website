@@ -1,4 +1,5 @@
-import { TyxoLogo, Kicker, WaitlistForm } from "./shared.jsx";
+import { useState } from "react";
+import { TyxoLogo, Kicker, WaitlistForm, LegalModal } from "./shared.jsx";
 
 // V1 — "The Memo"
 // Editorial document aesthetic. Paper-feeling, restrained, ample whitespace,
@@ -85,7 +86,9 @@ function MemoNav() {
 }
 
 function MemoHero() {
+  const [modal, setModal] = useState(null);
   return (
+    <>
     <section
       id="product"
       style={{
@@ -165,18 +168,16 @@ function MemoHero() {
             the AI Act.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
-            <a
-              href="#contact"
+            <button
+              onClick={() => setModal("contact")}
               style={{
                 ...memoStyles.ctaSecondary,
                 padding: "13px 22px",
                 fontSize: 14,
-                textDecoration: "none",
-                display: "inline-block",
               }}
             >
               Get in touch
-            </a>
+            </button>
           </div>
           <div
             style={{
@@ -449,6 +450,8 @@ function MemoHero() {
         </div>
       </div>
     </section>
+    <LegalModal type={modal} onClose={() => setModal(null)} />
+    </>
   );
 }
 
@@ -1663,7 +1666,9 @@ function MemoCTA() {
 }
 
 function MemoFooter() {
+  const [modal, setModal] = useState(null);
   return (
+    <>
     <footer
       style={{
         padding: "56px 64px 40px",
@@ -1769,9 +1774,16 @@ function MemoFooter() {
         }}
       >
         <span>© 2026 Tyxo · v1.0</span>
-        <span>EU-hosted · GDPR · AI Act ready</span>
+        <span>
+          EU-hosted · GDPR · AI Act ready ·{" "}
+          <button onClick={() => setModal("privacy")} style={{ background: "none", border: "none", color: "#6A8A8A", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", padding: 0 }}>Privacy</button>
+          {" · "}
+          <button onClick={() => setModal("terms")} style={{ background: "none", border: "none", color: "#6A8A8A", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", padding: 0 }}>Terms</button>
+        </span>
       </div>
     </footer>
+    <LegalModal type={modal} onClose={() => setModal(null)} />
+    </>
   );
 }
 
