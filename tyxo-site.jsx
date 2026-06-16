@@ -107,15 +107,18 @@ function SiteHero() {
             the AI Act.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
-            <button
+            <a
+              href="#contact"
               style={{
                 ...memoStyles.ctaSecondary,
                 padding: "13px 22px",
                 fontSize: 14,
+                textDecoration: "none",
+                display: "inline-block",
               }}
             >
-              Read the methodology
-            </button>
+              Get in touch
+            </a>
           </div>
           <div
             style={{

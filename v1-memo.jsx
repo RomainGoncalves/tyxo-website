@@ -165,15 +165,18 @@ function MemoHero() {
             the AI Act.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
-            <button
+            <a
+              href="#contact"
               style={{
                 ...memoStyles.ctaSecondary,
                 padding: "13px 22px",
                 fontSize: 14,
+                textDecoration: "none",
+                display: "inline-block",
               }}
             >
-              Read the methodology
-            </button>
+              Get in touch
+            </a>
           </div>
           <div
             style={{
@@ -481,12 +484,12 @@ function MemoTrust() {
             letterSpacing: "-0.005em",
           }}
         >
-          <span>CHUV · Lausanne</span>
-          <span style={{ fontStyle: "italic" }}>Inserm · Paris</span>
-          <span>Helmholtz · Munich</span>
-          <span style={{ fontStyle: "italic" }}>Karolinska · Stockholm</span>
-          <span>ETH · Zürich</span>
-          <span style={{ fontStyle: "italic" }}>UMC · Utrecht</span>
+          <span>University hospital · CH</span>
+          <span style={{ fontStyle: "italic" }}>Research institute · FR</span>
+          <span>Research centre · DE</span>
+          <span style={{ fontStyle: "italic" }}>University hospital · SE</span>
+          <span>University · CH</span>
+          <span style={{ fontStyle: "italic" }}>University hospital · NL</span>
         </div>
       </div>
     </section>
@@ -931,7 +934,7 @@ function MemoAltiCoreAI() {
               marginBottom: 18,
             }}
           >
-            AltiCoreAI — EvoChip.ai's compiled inference engine — turns trained
+            AltiCoreAI — <a href="https://www.evochip.ai" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>EvoChip.ai</a>'s compiled inference engine — turns trained
             classifiers into deterministic logic. The same mathematical property
             that makes it dramatically faster also makes it auditable. One
             architectural decision; two of the hardest problems in regulated ML
@@ -1087,37 +1090,37 @@ function MemoUsers() {
     {
       who: "Materials scientist",
       what: "classifying alloy fatigue failure modes from microscopy",
-      loc: "EMPA · Dübendorf",
-    },
-    {
-      who: "Geologist",
-      what: "identifying mineral phases from Raman + XRD spectra",
-      loc: "GFZ · Potsdam",
-    },
-    {
-      who: "Wildlife biologist",
-      what: "tagging species in 200k camera-trap frames",
-      loc: "CNRS · Montpellier",
-    },
-    {
-      who: "Ecologist",
-      what: "classifying acoustic species observations",
-      loc: "WSL · Birmensdorf",
-    },
-    {
-      who: "Geneticist",
-      what: "predicting variant pathogenicity from sequencing reads",
-      loc: "Helmholtz · Munich",
+      loc: "Research institute · CH",
     },
     {
       who: "Oncologist",
       what: "scoring tumour subtypes from RNA-seq",
-      loc: "CHUV · Lausanne",
+      loc: "University hospital · CH",
+    },
+    {
+      who: "Geologist",
+      what: "identifying mineral phases from Raman + XRD spectra",
+      loc: "Research institute · DE",
+    },
+    {
+      who: "Wildlife biologist",
+      what: "tagging species in 200k camera-trap frames",
+      loc: "Research institute · FR",
+    },
+    {
+      who: "Ecologist",
+      what: "classifying acoustic species observations",
+      loc: "Research institute · CH",
+    },
+    {
+      who: "Geneticist",
+      what: "predicting variant pathogenicity from sequencing reads",
+      loc: "Research centre · DE",
     },
     {
       who: "Agronomist",
       what: "flagging crop-disease lesions from multispectral imagery",
-      loc: "INRAE · Paris",
+      loc: "Research institute · FR",
     },
   ];
   return (
@@ -1593,6 +1596,7 @@ function MemoPricing() {
 function MemoCTA() {
   return (
     <section
+      id="contact"
       style={{
         padding: "120px 64px 96px",
         background: "#FFFFFF",

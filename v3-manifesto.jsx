@@ -694,7 +694,7 @@ function MFAltiCoreAI() {
             <strong style={{ color: "#F0EBE3", fontWeight: 700 }}>
               AltiCoreAI
             </strong>{" "}
-            — EvoChip.ai's compiled inference engine. Trained classifiers become
+            — <a href="https://www.evochip.ai" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>EvoChip.ai</a>'s compiled inference engine. Trained classifiers become
             deterministic logic. Independently benchmarked at 13–41× faster than
             TensorFlow on tabular workloads. The mathematical property that
             delivers that speed — determinism — is the same property a regulator

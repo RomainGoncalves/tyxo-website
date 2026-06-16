@@ -933,12 +933,12 @@ function WBLogosBar() {
             letterSpacing: "-0.005em",
           }}
         >
-          <span>CHUV · Lausanne</span>
-          <span style={{ fontStyle: "italic" }}>Inserm · Paris</span>
-          <span>Helmholtz · Munich</span>
-          <span style={{ fontStyle: "italic" }}>Karolinska · Stockholm</span>
-          <span>ETH · Zürich</span>
-          <span style={{ fontStyle: "italic" }}>UMC · Utrecht</span>
+          <span>University hospital · CH</span>
+          <span style={{ fontStyle: "italic" }}>Research institute · FR</span>
+          <span>Research centre · DE</span>
+          <span style={{ fontStyle: "italic" }}>University hospital · SE</span>
+          <span>University · CH</span>
+          <span style={{ fontStyle: "italic" }}>University hospital · NL</span>
         </div>
       </div>
     </section>
@@ -1490,7 +1490,7 @@ function WBAltiCoreAI() {
               marginBottom: 20,
             }}
           >
-            Tyxo runs on AltiCoreAI — EvoChip.ai's compiled inference engine.
+            Tyxo runs on AltiCoreAI — <a href="https://www.evochip.ai" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>EvoChip.ai</a>'s compiled inference engine.
             Trained classifiers become deterministic logic. The same
             mathematical property that makes it 13–41× faster than TensorFlow
             also makes it auditable. One architectural decision; two of the
@@ -1704,42 +1704,42 @@ function WBUseCases() {
       title: "Alloy fatigue failure-mode classifier",
       sample: "9.4k micrographs · 5 classes",
       acc: "97.8%",
-      who: "EMPA · Dübendorf",
+      who: "Research institute · CH",
     },
     {
       tag: "Geology",
       title: "Mineral phase from Raman + XRD",
       sample: "8.4k samples · 12 classes",
       acc: "98.7%",
-      who: "GFZ · Potsdam",
+      who: "Research institute · DE",
     },
     {
       tag: "Wildlife",
       title: "Camera-trap species identifier",
       sample: "212k frames · 47 species",
       acc: "95.4%",
-      who: "CNRS · Montpellier",
+      who: "Research institute · FR",
     },
     {
       tag: "Ecology",
       title: "Acoustic species classifier",
       sample: "22k clips · 38 classes",
       acc: "96.2%",
-      who: "WSL · Birmensdorf",
+      who: "Research institute · CH",
     },
     {
       tag: "Genetics",
       title: "Variant pathogenicity scorer",
       sample: "31k variants · binary",
       acc: "98.0%",
-      who: "Helmholtz · Munich",
+      who: "Research centre · DE",
     },
     {
       tag: "Oncology",
       title: "Tumour-subtype classification",
       sample: "12.4k samples · 7 classes",
       acc: "99.3%",
-      who: "CHUV · Lausanne",
+      who: "University hospital · CH",
     },
   ];
   return (
