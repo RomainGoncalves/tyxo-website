@@ -655,7 +655,7 @@ function MemoWorkflow() {
       n: "03",
       title: "Train",
       what: "Waits. Typical wall-clock: 2–4 hours.",
-      tyxo: "AltiCore compiles and trains automatically. Selects optimal configuration. Returns accuracy, confusion matrix, feature importances in research-friendly language.",
+      tyxo: "AltiCoreAI compiles and trains automatically. Selects optimal configuration. Returns accuracy, confusion matrix, feature importances in research-friendly language.",
       t: "2–4 hrs",
     },
     {
@@ -865,7 +865,7 @@ function MemoWorkflow() {
   );
 }
 
-function MemoAltiCore() {
+function MemoAltiCoreAI() {
   return (
     <section
       style={{
@@ -917,7 +917,7 @@ function MemoAltiCore() {
             <em
               style={{ color: "#C0634A", fontWeight: 700, fontStyle: "italic" }}
             >
-              AltiCore
+              AltiCoreAI
             </em>
             .<br />A generational shift away from neural runtimes.
           </h2>
@@ -931,7 +931,7 @@ function MemoAltiCore() {
               marginBottom: 18,
             }}
           >
-            AltiCore — EvoChip.ai's compiled inference engine — turns trained
+            AltiCoreAI — EvoChip.ai's compiled inference engine — turns trained
             classifiers into deterministic logic. The same mathematical property
             that makes it dramatically faster also makes it auditable. One
             architectural decision; two of the hardest problems in regulated ML
@@ -948,7 +948,7 @@ function MemoAltiCore() {
             }}
           >
             We hold the EU research-vertical exclusivity. A US competitor cannot
-            acquire EU compliance and AltiCore-class economics by writing a
+            acquire EU compliance and AltiCoreAI-class economics by writing a
             cheque.
           </p>
           <div
@@ -978,7 +978,7 @@ function MemoAltiCore() {
               marginBottom: 20,
             }}
           >
-            <Kicker>Benchmark · TensorFlow vs AltiCore</Kicker>
+            <Kicker>Benchmark · TensorFlow vs AltiCoreAI</Kicker>
             <div
               style={{
                 fontFamily: "'Fraunces',serif",
@@ -1700,7 +1700,7 @@ function MemoFooter() {
                 "How it works",
                 "For researchers",
                 "For institutional labs",
-                "AltiCore engine",
+                "AltiCoreAI engine",
                 "Compliance",
               ],
             ],
@@ -1779,7 +1779,7 @@ function MemoLanding() {
       <MemoTrust />
       <MemoProblem />
       <MemoWorkflow />
-      <MemoAltiCore />
+      <MemoAltiCoreAI />
       <MemoUsers />
       <MemoCompliance />
       <MemoPricing />
@@ -1796,7 +1796,7 @@ export {
   MemoTrust,
   MemoProblem,
   MemoWorkflow,
-  MemoAltiCore,
+  MemoAltiCoreAI,
   MemoUsers,
   MemoCompliance,
   MemoPricing,

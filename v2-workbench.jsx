@@ -78,7 +78,7 @@ function WBNav() {
         <div style={{ display: "flex", gap: 28 }}>
           <a href="#platform" style={{ ...wbStyles.navLinkActive, textDecoration: "none" }}>Platform</a>
           <a href="#workflow" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Workflow</a>
-          <a href="#alticore" style={{ ...wbStyles.navLink, textDecoration: "none" }}>AltiCore</a>
+          <a href="#alticore" style={{ ...wbStyles.navLink, textDecoration: "none" }}>AltiCoreAI</a>
           <a href="#compliance" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Compliance</a>
           <a href="#pricing" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Pricing</a>
         </div>
@@ -275,7 +275,7 @@ function WBProductWindow() {
                 fontWeight: 300,
               }}
             >
-              AltiCore engine
+              AltiCoreAI engine
             </div>
           </div>
         </aside>
@@ -792,7 +792,7 @@ function WBHero() {
           >
             Tyxo turns labelled tabular data into a validated, explainable
             classifier in hours. Automated end-to-end. EU-hosted from day one.
-            Inference compiled to deterministic logic by AltiCore — so it is
+            Inference compiled to deterministic logic by AltiCoreAI — so it is
             fast, cheap, and defensible in a regulated decision.
           </p>
           <div style={{ display: "flex", gap: 14, marginBottom: 48 }}>
@@ -1091,7 +1091,7 @@ function WBWorkflow() {
       n: "03",
       t: "Train",
       dur: "2 – 4 hrs",
-      desc: "AltiCore compiles, trains and selects the optimal configuration automatically. You wait. We surface the result in your vocabulary.",
+      desc: "AltiCoreAI compiles, trains and selects the optimal configuration automatically. You wait. We surface the result in your vocabulary.",
       ui: (
         <div
           style={{
@@ -1408,7 +1408,7 @@ function WBWorkflow() {
   );
 }
 
-function WBAltiCore() {
+function WBAltiCoreAI() {
   return (
     <section
       id="alticore"
@@ -1458,7 +1458,7 @@ function WBAltiCore() {
                 opacity: 0.7,
               }}
             />
-            <Kicker color="#E8845C">The engine · AltiCore</Kicker>
+            <Kicker color="#E8845C">The engine · AltiCoreAI</Kicker>
           </div>
           <h2
             style={{
@@ -1490,7 +1490,7 @@ function WBAltiCore() {
               marginBottom: 20,
             }}
           >
-            Tyxo runs on AltiCore — EvoChip.ai's compiled inference engine.
+            Tyxo runs on AltiCoreAI — EvoChip.ai's compiled inference engine.
             Trained classifiers become deterministic logic. The same
             mathematical property that makes it 13–41× faster than TensorFlow
             also makes it auditable. One architectural decision; two of the
@@ -1507,7 +1507,7 @@ function WBAltiCore() {
             }}
           >
             We hold the EU research-vertical exclusivity. A US competitor cannot
-            acquire EU compliance and AltiCore-class economics by writing a
+            acquire EU compliance and AltiCoreAI-class economics by writing a
             cheque.
           </p>
           <button
@@ -1517,7 +1517,7 @@ function WBAltiCore() {
               fontSize: 14,
             }}
           >
-            Read the AltiCore brief →
+            Read the AltiCoreAI brief →
           </button>
         </div>
 
@@ -1571,7 +1571,7 @@ function WBAltiCore() {
               ["TensorFlow 2.x", "#7AB0D4", 95, 460],
               ["PyTorch 2.3", "#7AB0D4", 88, 420],
               ["XGBoost", "#B8C8D8", 38, 180],
-              ["AltiCore (Tyxo)", "#E8845C", 2.4, 11, true],
+              ["AltiCoreAI (Tyxo)", "#E8845C", 2.4, 11, true],
             ].map((r, i) => (
               <div
                 key={i}
@@ -1912,7 +1912,7 @@ function WBCompliance() {
     ],
     [
       "Inference",
-      "Compiled, deterministic logic via AltiCore",
+      "Compiled, deterministic logic via AltiCoreAI",
       "—",
       "Same input → same output. Defensible in a regulated decision.",
     ],
@@ -2438,7 +2438,7 @@ function WBFooter() {
           {[
             [
               "Product",
-              ["Platform", "Workflow", "AltiCore", "Compliance", "Pricing"],
+              ["Platform", "Workflow", "AltiCoreAI", "Compliance", "Pricing"],
             ],
             [
               "Resources",
@@ -2503,7 +2503,7 @@ function WorkbenchLanding() {
       <WBHero />
       <WBLogosBar />
       <WBWorkflow />
-      <WBAltiCore />
+      <WBAltiCoreAI />
       <WBUseCases />
       <WBCompliance />
       <WBPricing />
@@ -2519,7 +2519,7 @@ export {
   WBHero,
   WBLogosBar,
   WBWorkflow,
-  WBAltiCore,
+  WBAltiCoreAI,
   WBUseCases,
   WBCompliance,
   WBPricing,

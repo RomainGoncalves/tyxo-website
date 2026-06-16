@@ -12,7 +12,7 @@
 import {
   MemoNav,
   MemoProblem,
-  MemoAltiCore,
+  MemoAltiCoreAI,
   MemoUsers,
   MemoCompliance,
   MemoPricing,
@@ -411,7 +411,7 @@ function TyxoSite() {
       <MFManifesto />
       <MemoProblem />
       <MFWorkflow />
-      <MemoAltiCore />
+      <MemoAltiCoreAI />
       <WBUseCases />
       <MemoUsers />
       <MemoCompliance />

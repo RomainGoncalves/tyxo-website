@@ -276,7 +276,7 @@ function MFManifesto() {
     {
       n: "IV",
       t: "Inference is compiled, not predicted.",
-      b: "Tyxo runs on AltiCore: a generational shift away from probabilistic neural runtimes toward compiled, deterministic logic. Same input → same output. Auditable by construction. 13–41× faster than TensorFlow. The same architectural decision solves cost and explainability at once.",
+      b: "Tyxo runs on AltiCoreAI: a generational shift away from probabilistic neural runtimes toward compiled, deterministic logic. Same input → same output. Auditable by construction. 13–41× faster than TensorFlow. The same architectural decision solves cost and explainability at once.",
     },
     {
       n: "V",
@@ -496,7 +496,7 @@ function MFWorkflow() {
             [
               "03",
               "Train",
-              "AltiCore compiles, trains and selects the optimal configuration. No hyperparameter grid to tune.",
+              "AltiCoreAI compiles, trains and selects the optimal configuration. No hyperparameter grid to tune.",
               "2 – 4 hrs",
             ],
             [
@@ -584,7 +584,7 @@ function MFWorkflow() {
   );
 }
 
-function MFAltiCore() {
+function MFAltiCoreAI() {
   return (
     <section
       style={{
@@ -692,7 +692,7 @@ function MFAltiCore() {
           >
             Tyxo runs on{" "}
             <strong style={{ color: "#F0EBE3", fontWeight: 700 }}>
-              AltiCore
+              AltiCoreAI
             </strong>{" "}
             — EvoChip.ai's compiled inference engine. Trained classifiers become
             deterministic logic. Independently benchmarked at 13–41× faster than
@@ -708,7 +708,7 @@ function MFAltiCore() {
             <em style={{ color: "#E8845C", fontStyle: "italic" }}>
               We hold the EU research-vertical exclusivity.
             </em>{" "}
-            A US competitor cannot acquire EU compliance and AltiCore-class
+            A US competitor cannot acquire EU compliance and AltiCoreAI-class
             economics by writing a cheque.
           </p>
 
@@ -780,7 +780,7 @@ function MFAltiCore() {
                       fontWeight: 600,
                     }}
                   >
-                    AltiCore (Tyxo)
+                    AltiCoreAI (Tyxo)
                   </div>
                   <div
                     style={{
@@ -824,7 +824,7 @@ function MFAltiCore() {
                   ["TensorFlow 2.x", "460 ms", 100, "#7AB0D4"],
                   ["PyTorch 2.3", "420 ms", 91, "#7AB0D4"],
                   ["XGBoost", "180 ms", 39, "#B8C8D8"],
-                  ["AltiCore", "11 ms", 2.4, "#E8845C", true],
+                  ["AltiCoreAI", "11 ms", 2.4, "#E8845C", true],
                 ].map((r, i) => (
                   <div
                     key={i}
@@ -1127,7 +1127,7 @@ function MFInvestor() {
           [
             "~89%",
             "gross margin",
-            "AltiCore eliminates inference COGS",
+            "AltiCoreAI eliminates inference COGS",
             "#E8845C",
           ],
         ].map((c, i) => (
@@ -1358,7 +1358,7 @@ function MFFooter() {
                 "How it works",
                 "For researchers",
                 "Manifesto",
-                "AltiCore engine",
+                "AltiCoreAI engine",
                 "Compliance",
               ],
             ],
@@ -1429,7 +1429,7 @@ function ManifestoLanding() {
       <MFMarquee />
       <MFManifesto />
       <MFWorkflow />
-      <MFAltiCore />
+      <MFAltiCoreAI />
       <MFAudience />
       <MFInvestor />
       <MFClosing />
@@ -1445,7 +1445,7 @@ export {
   MFMarquee,
   MFManifesto,
   MFWorkflow,
-  MFAltiCore,
+  MFAltiCoreAI,
   MFAudience,
   MFInvestor,
   MFClosing,
