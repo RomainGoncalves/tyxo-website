@@ -1,4 +1,4 @@
-import { TyxoLogo, Kicker } from "./shared.jsx";
+import { TyxoLogo, Kicker, WaitlistForm } from "./shared.jsx";
 
 // V1 — "The Memo"
 // Editorial document aesthetic. Paper-feeling, restrained, ample whitespace,
@@ -120,7 +120,7 @@ function MemoHero() {
                 display: "inline-block",
               }}
             />
-            <Kicker>AI Research Assistant · for research</Kicker>
+            <Kicker>AI Research Assistant · for scientists</Kicker>
           </div>
           <h1
             style={{
@@ -1653,17 +1653,7 @@ function MemoCTA() {
         the first model, in your language, on your data — under NDA, EU-hosted,
         no commitment.
       </p>
-      <div style={{ display: "flex", gap: 14, justifyContent: "center" }}>
-        <button
-          style={{
-            ...memoStyles.ctaSecondary,
-            padding: "14px 26px",
-            fontSize: 14,
-          }}
-        >
-          Book 20-min call
-        </button>
-      </div>
+      <WaitlistForm />
     </section>
   );
 }
@@ -1697,7 +1687,7 @@ function MemoFooter() {
               fontWeight: 300,
             }}
           >
-            AI Research Assistant · Research
+            AI Research Assistant · for scientists
             <br />
             Tyxo · Zurich, CH
           </div>

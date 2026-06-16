@@ -1,4 +1,4 @@
-import { TyxoLogo, Kicker } from "./shared.jsx";
+import { TyxoLogo, Kicker, WaitlistForm } from "./shared.jsx";
 
 // V3 — "The Manifesto"
 // Bold, confident, asymmetric editorial. Big display Fraunces italics, alternating
@@ -1301,28 +1301,7 @@ function MFClosing() {
         Five design-partner slots remain for 2026. We work on your data, in your
         language, EU-hosted, under NDA. No commitment beyond a 20-minute call.
       </p>
-      <div style={{ display: "flex", gap: 14, justifyContent: "center" }}>
-        <button
-          style={{ ...mfStyles.ctaPrimary, padding: "18px 32px", fontSize: 15 }}
-        >
-          Apply as design partner →
-        </button>
-        <button
-          style={{
-            background: "transparent",
-            color: "#1A1A1A",
-            fontFamily: "'Outfit',sans-serif",
-            fontSize: 15,
-            fontWeight: 600,
-            padding: "17px 30px",
-            borderRadius: 99,
-            border: "1px solid #1A1A1A",
-            cursor: "pointer",
-          }}
-        >
-          Book 20-min call
-        </button>
-      </div>
+      <WaitlistForm />
     </section>
   );
 }

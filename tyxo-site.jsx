@@ -61,7 +61,7 @@ function SiteHero() {
                 display: "inline-block",
               }}
             />
-            <Kicker>AI Research Assistant · for research</Kicker>
+            <Kicker>AI Research Assistant · for scientists</Kicker>
           </div>
           <h1
             style={{

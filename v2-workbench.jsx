@@ -1,4 +1,4 @@
-import { TyxoLogo, Kicker } from "./shared.jsx";
+import { TyxoLogo, Kicker, WaitlistForm } from "./shared.jsx";
 
 // V2 — "The Workbench"
 // Product-forward. Deep teal dark hero with a "live-looking" product window.
@@ -2369,26 +2369,7 @@ function WBCTA() {
           your data — under NDA, EU-hosted, no commitment beyond an introductory
           call.
         </p>
-        <div style={{ display: "flex", gap: 14, justifyContent: "center" }}>
-          <button
-            style={{
-              ...wbStyles.ctaPrimary,
-              padding: "15px 28px",
-              fontSize: 14,
-            }}
-          >
-            Apply as design partner →
-          </button>
-          <button
-            style={{
-              ...wbStyles.ctaGhostDark,
-              padding: "14px 26px",
-              fontSize: 14,
-            }}
-          >
-            Book 20-min call
-          </button>
-        </div>
+        <WaitlistForm dark />
       </div>
     </section>
   );
@@ -2425,7 +2406,7 @@ function WBFooter() {
               maxWidth: 240,
             }}
           >
-            AI Research Assistant · Research
+            AI Research Assistant · for scientists
             <br />
             Tyxo · Zurich, CH
           </div>
