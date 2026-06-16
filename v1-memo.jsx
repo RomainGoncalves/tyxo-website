@@ -72,11 +72,9 @@ function MemoNav() {
       <div style={{ display: "flex", alignItems: "center", gap: 48 }}>
         <TyxoLogo size={22} />
         <div style={memoStyles.navLinks}>
-          <a href="#product" style={{ textDecoration: "none", color: "inherit" }}>Product</a>
-          <a href="#for-researchers" style={{ textDecoration: "none", color: "inherit" }}>For researchers</a>
-          <a href="#compliance" style={{ textDecoration: "none", color: "inherit" }}>Compliance</a>
-          <a href="#pricing" style={{ textDecoration: "none", color: "inherit" }}>Pricing</a>
-
+          {[["Product","manifesto"],["For scientists","for-researchers"],["Compliance","compliance"]].map(([label, id]) => (
+            <button key={id} onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", color: "inherit", padding: 0 }}>{label}</button>
+          ))}
         </div>
       </div>
       <div style={memoStyles.navRight}>
@@ -1428,6 +1426,7 @@ function MemoPricing() {
     <section
       id="pricing"
       style={{
+        display: "none",
         padding: "96px 64px 80px",
         borderBottom: "1px solid #E0E0E0",
         background: "#FFFFFF",

@@ -61,9 +61,9 @@ function MFNav() {
             fontWeight: 400,
           }}
         >
-          <a href="#what-it-does" style={{ textDecoration: "none", color: "inherit" }}>What it does</a>
-          <a href="#who-its-for" style={{ textDecoration: "none", color: "inherit" }}>Who it's for</a>
-          <a href="#manifesto" style={{ textDecoration: "none", color: "inherit" }}>Manifesto</a>
+          {[["What it does","what-it-does"],["Who it's for","who-its-for"],["Manifesto","manifesto"]].map(([label, id]) => (
+            <button key={id} onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", color: "inherit", padding: 0 }}>{label}</button>
+          ))}
           <span>Compliance</span>
           <span>Pricing</span>
         </div>

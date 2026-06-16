@@ -77,11 +77,9 @@ function WBNav() {
       <div style={{ display: "flex", alignItems: "center", gap: 44 }}>
         <TyxoLogo dark size={20} />
         <div style={{ display: "flex", gap: 28 }}>
-          <a href="#platform" style={{ ...wbStyles.navLinkActive, textDecoration: "none" }}>Platform</a>
-          <a href="#workflow" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Workflow</a>
-          <a href="#alticore" style={{ ...wbStyles.navLink, textDecoration: "none" }}>AltiCoreAI</a>
-          <a href="#compliance" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Compliance</a>
-          <a href="#pricing" style={{ ...wbStyles.navLink, textDecoration: "none" }}>Pricing</a>
+          {[["Platform","platform",true],["Workflow","workflow",false],["AltiCoreAI","alticore",false],["Compliance","compliance",false]].map(([label, id, active]) => (
+            <button key={id} onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })} style={{ background: "none", border: "none", cursor: "pointer", padding: 0, ...(active ? wbStyles.navLinkActive : wbStyles.navLink) }}>{label}</button>
+          ))}
         </div>
       </div>
       <div style={{ display: "flex", gap: 14, alignItems: "center" }}>
@@ -2113,7 +2111,7 @@ function WBPricing() {
   return (
     <section
       id="pricing"
-      style={{ padding: "112px 56px 96px", borderBottom: "1px solid #E0E0E0" }}
+      style={{ display: "none", padding: "112px 56px 96px", borderBottom: "1px solid #E0E0E0" }}
     >
       <div
         style={{
