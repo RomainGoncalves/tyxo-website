@@ -4,7 +4,6 @@ node_modules/
 # build output
 public/
 dist-ssr/
-data/
 
 # vite cache
 .vite/
