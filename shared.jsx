@@ -2,7 +2,7 @@
 // All three artboards share Tyxo brand tokens but pursue distinct visual postures.
 import { useState } from "react";
 
-// Logo — matches charte: hollow circle + TIXO + Sienna "AI"
+// Logo — matches charte: hollow circle + TYXO + Sienna "AI"
 function TyxoLogo({ dark = false, size = 22 }) {
   const ink = dark ? "#F0EBE3" : "#1A1A1A";
   return (
@@ -29,7 +29,7 @@ function TyxoLogo({ dark = false, size = 22 }) {
         }}
       />
       <span style={{ display: "inline-flex", alignItems: "baseline" }}>
-        TIXO
+        TYXO
         <span
           style={{
             color: "#C0634A",
